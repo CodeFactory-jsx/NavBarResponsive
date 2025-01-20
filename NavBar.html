@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Sticky Navigation Bar | CodingLab </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">WWW</a>
+                </div>
+                <ul class="nav-links" id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="bar-icon" id="bar-icon">&#9776;</div>
+            </div>
+        </nav>
+        <section class="home"></section>
+
+        <script>
+
+    const barIcon = document.getElementById('bar-icon');
+    const menu = document.getElementById('menu');
+
+    barIcon.addEventListener('click', () => {
+      if (menu.style.display === 'flex') {
+          menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+      }
+    });
+  </script>
+    </body>
+</html>
